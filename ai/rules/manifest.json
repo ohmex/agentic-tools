@@ -1,0 +1,324 @@
+{
+    "rules":  [
+                  {
+                      "name":  "ai-agents",
+                      "description":  "AI agent orchestration conventions (LangChain, LangGraph, PydanticAI)",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/agents/**",
+                                    "**/chains/**",
+                                    "**/graphs/**",
+                                    "**/tools/**",
+                                    "**/prompts/**"
+                                ]
+                  },
+                  {
+                      "name":  "angular",
+                      "description":  "Angular + TypeScript conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.component.ts",
+                                    "**/*.service.ts",
+                                    "**/*.module.ts",
+                                    "**/*.directive.ts"
+                                ]
+                  },
+                  {
+                      "name":  "api-design",
+                      "description":  "REST API design and OpenAPI conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/api/**",
+                                    "**/handler/**",
+                                    "**/*.yaml",
+                                    "**/*.yml"
+                                ]
+                  },
+                  {
+                      "name":  "architecture",
+                      "description":  "Architectural boundaries and service design rules — apply when designing cross-cutting features, new services, or anything crossing a service boundary.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "azure",
+                      "description":  "Azure infrastructure and service usage conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/terraform/**",
+                                    "**/*.bicep",
+                                    "**/azure/**"
+                                ]
+                  },
+                  {
+                      "name":  "background-jobs",
+                      "description":  "Background job, worker, and scheduled task conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/worker/**",
+                                    "**/jobs/**",
+                                    "**/cron/**"
+                                ]
+                  },
+                  {
+                      "name":  "caching",
+                      "description":  "Redis caching conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/cache/**",
+                                    "**/redis/**"
+                                ]
+                  },
+                  {
+                      "name":  "ci-cd",
+                      "description":  "CI/CD pipeline standards",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/.github/workflows/**",
+                                    "**/ci/**",
+                                    "**/Jenkinsfile"
+                                ]
+                  },
+                  {
+                      "name":  "code-review",
+                      "description":  "Code review standards — apply when reviewing a PR or diff, or acting as the reviewer agent.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "config-management",
+                      "description":  "Configuration and environment variable conventions — apply when adding/changing config values, env vars, or startup settings.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "csharp-dotnet",
+                      "description":  "C# / ASP.NET Core conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.cs",
+                                    "**/*.csproj"
+                                ]
+                  },
+                  {
+                      "name":  "data-privacy",
+                      "description":  "PII, data privacy, and compliance handling rules — apply when a change collects, stores, exports, or shares personal/tenant data.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "dependency-management",
+                      "description":  "Third-party dependency and version management rules",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/go.mod",
+                                    "**/go.sum",
+                                    "**/package.json"
+                                ]
+                  },
+                  {
+                      "name":  "docker",
+                      "description":  "Docker image and container build conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/Dockerfile*",
+                                    "**/docker-compose*.yml"
+                                ]
+                  },
+                  {
+                      "name":  "documentation",
+                      "description":  "Documentation standards — apply when writing/updating READMEs, ADRs, OpenAPI docs, runbooks, or context docs.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "echo",
+                      "description":  "Echo framework conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/handler/**",
+                                    "**/router/**",
+                                    "**/*.go"
+                                ]
+                  },
+                  {
+                      "name":  "engineering",
+                      "description":  "General engineering standards applied to all code in this repo",
+                      "alwaysApply":  true
+                  },
+                  {
+                      "name":  "git",
+                      "description":  "Git commit, branch, and PR conventions — apply when writing commit messages, naming branches, or drafting a PR description.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "gitflow",
+                      "description":  "Gitflow branching model — apply when creating branches, planning a release/hotfix, or merging across main/develop.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "golang",
+                      "description":  "Go language and idiom rules",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.go"
+                                ]
+                  },
+                  {
+                      "name":  "istio",
+                      "description":  "Istio service mesh conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/istio/**",
+                                    "**/*virtualservice*.yaml",
+                                    "**/*destinationrule*.yaml"
+                                ]
+                  },
+                  {
+                      "name":  "kubernetes",
+                      "description":  "Kubernetes deployment and manifest conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.yaml",
+                                    "**/k8s/**",
+                                    "**/helm/**"
+                                ]
+                  },
+                  {
+                      "name":  "messaging",
+                      "description":  "Kafka event and messaging conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/kafka/**",
+                                    "**/events/**",
+                                    "**/consumer/**",
+                                    "**/producer/**"
+                                ]
+                  },
+                  {
+                      "name":  "migrations",
+                      "description":  "Database migration safety rules — apply when authoring, reviewing, or planning a schema migration.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "nodejs",
+                      "description":  "Node.js runtime and backend conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/server.ts",
+                                    "**/server.js",
+                                    "**/src/server/**",
+                                    "package.json"
+                                ]
+                  },
+                  {
+                      "name":  "observability",
+                      "description":  "Logging, metrics, and tracing standards — apply when adding/changing logging, metrics, tracing, alerts, or dashboards.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "performance",
+                      "description":  "Performance and efficiency standards — apply when optimizing, profiling, or reviewing code for latency/throughput/scalability concerns.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "playwright",
+                      "description":  "Playwright end-to-end testing conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.spec.ts",
+                                    "**/e2e/**"
+                                ]
+                  },
+                  {
+                      "name":  "postgres",
+                      "description":  "PostgreSQL schema, query, and data-access rules",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.sql",
+                                    "**/repository/**",
+                                    "**/migrations/**"
+                                ]
+                  },
+                  {
+                      "name":  "powershell",
+                      "description":  "PowerShell scripting conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.ps1",
+                                    "**/*.psm1",
+                                    "**/*.psd1"
+                                ]
+                  },
+                  {
+                      "name":  "python",
+                      "description":  "Python language and project conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.py"
+                                ]
+                  },
+                  {
+                      "name":  "python-fastapi",
+                      "description":  "FastAPI application architecture and conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/routers/**",
+                                    "**/api/**/*.py",
+                                    "**/schemas/**/*.py",
+                                    "**/services/**/*.py",
+                                    "**/main.py"
+                                ]
+                  },
+                  {
+                      "name":  "rbac",
+                      "description":  "RBAC and authorization patterns — apply when implementing or reviewing authorization/permission logic.",
+                      "alwaysApply":  false
+                  },
+                  {
+                      "name":  "security",
+                      "description":  "Security standards — OWASP, auth, secrets, multi-tenancy",
+                      "alwaysApply":  true
+                  },
+                  {
+                      "name":  "sqlserver",
+                      "description":  "SQL Server (T-SQL) schema, query, and data-access rules",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.sql",
+                                    "**/Migrations/**",
+                                    "**/*.cs"
+                                ]
+                  },
+                  {
+                      "name":  "svelte",
+                      "description":  "Svelte 5 / SvelteKit conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.svelte",
+                                    "**/*.svelte.ts"
+                                ]
+                  },
+                  {
+                      "name":  "tailwind",
+                      "description":  "Tailwind CSS conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "tailwind.config.*",
+                                    "**/*.svelte",
+                                    "**/*.component.html"
+                                ]
+                  },
+                  {
+                      "name":  "testing",
+                      "description":  "Testing standards across unit, integration, and end-to-end levels",
+                      "alwaysApply":  true
+                  },
+                  {
+                      "name":  "typescript",
+                      "description":  "TypeScript / JavaScript conventions",
+                      "alwaysApply":  false,
+                      "paths":  [
+                                    "**/*.ts",
+                                    "**/*.tsx",
+                                    "**/*.js",
+                                    "**/*.mjs"
+                                ]
+                  }
+              ]
+}

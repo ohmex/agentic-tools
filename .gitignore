@@ -1,0 +1,16 @@
+# Local / personal overrides - do not commit
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Generated adapters (run: powershell -File ai/scripts/sync-adapters.ps1)
+.cursor/rules/
+.cursor/agents/
+.claude/rules/
+.claude/skills/
+.claude/agents/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
